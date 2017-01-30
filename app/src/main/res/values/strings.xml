@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="title_movie_detail">Movie Details</string>
+    <string name="title_activity_settings">Settings</string>
+
+
+    <!-- Status messages -->
+    <string name="loading_movies_from_db">Loading movies from database</string>
+    <string name="loading_movies_from_api">Loading movies from API</string>
+    <string name="loading_movie_details">Loading movie details</string>
+    <string name="network_not_available">Network is not available</string>
+
+    <!-- Movie data -->
+    <string name="id">ID</string>
+    <string name="original_title">Original title</string>
+    <string name="release_date">Release date</string>
+    <string name="user_rating">User rating</string>
+    <string name="popularity">Popularity</string>
+
+    <string name="menu_settings_title">Settings</string>
+
+    <!-- Movie list -->
+    <string name="movie_list_poster_size">w185</string>
+    <string name="movie_detail_poster_size">w500</string>
+
+    <!-- Strings related to Settings -->
+    <!-- Example General settings -->
+    <string name="pref_movie_sort_criteria_key" translatable="false">movie_sort_criteria</string>
+    <string name="pref_movie_sort_criteria_title">Sort order</string>
+
+    <string name="pref_movie_sort_most_popular_title">Most popular</string>
+    <string name="pref_movie_sort_top_rated_title">Top rated</string>
+
+    <string name="pref_movie_sort_most_popular_value">most_popular</string>
+    <string name="pref_movie_sort_top_rated_value">top_rated</string>
+    <string name="pref_movie_sort_default_value">@string/pref_movie_sort_top_rated_value</string>
+
+    <string-array name="pref_movie_sort_criteria_titles">
+        <item>@string/pref_movie_sort_most_popular_title</item>
+        <item>@string/pref_movie_sort_top_rated_title</item>
+    </string-array>
+    <string-array name="pref_movie_sort_criteria_values">
+        <item>@string/pref_movie_sort_most_popular_value</item>
+        <item>@string/pref_movie_sort_top_rated_value</item>
+    </string-array>
+
+    <!-- Sync interval settings -->
+    <string name="pref_sync_interval_key" translatable="false">sync_interval</string>
+    <string name="pref_sync_interval_default">5</string>
+    <string name="pref_sync_interval_title">Sync interval</string>
+
+
+    <!-- Online -->
+    <string name="pref_online_title">Online</string>
+    <string name="pref_online_key" translatable="false">online</string>
+</resources>
