@@ -1,0 +1,25 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:defaultValue="@string/pref_movie_sort_default_value"
+        android:entries="@array/pref_movie_sort_criteria_titles"
+        android:entryValues="@array/pref_movie_sort_criteria_values"
+        android:key="@string/pref_movie_sort_criteria_key"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_movie_sort_criteria_title" />
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_sync_interval_default"
+        android:title="@string/pref_sync_interval_title"
+        android:key="@string/pref_sync_interval_key" />
+
+    <SwitchPreference
+        android:defaultValue="@bool/pref_online_default_value"
+        android:title="@string/pref_online_title"
+        android:key="@string/pref_online_key" />
+
+</PreferenceScreen>
