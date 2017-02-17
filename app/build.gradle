@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 
+def TMBD_API_KEY = "\"" + TmdbApiKey + "\""
+
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -13,6 +15,10 @@ android {
         vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
+        buildTypes.each {
+            it.buildConfigField "String", "TMDB_API_KEY", TMBD_API_KEY
+        }
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
